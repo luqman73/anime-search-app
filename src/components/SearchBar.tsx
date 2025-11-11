@@ -22,14 +22,14 @@ export default function SearchBar() {
   }, [input, dispatch]);
 
   return (
-    <div style={{ textAlign: "center", margin: "20px" }}>
-      <input
-        type="text"
-        placeholder="Search anime..."
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        style={{ padding: "8px", width: "300px" }}
-      />
-    </div>
+    <div className="flex justify-center mb-10">
+  <input
+    type="text"
+    placeholder="Search anime..."
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    className="w-full max-w-md px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600"
+  />
+</div>
   );
 }
